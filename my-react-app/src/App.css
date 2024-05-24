@@ -67,6 +67,14 @@ text{
   border-radius: 15px;
 }
 
+.stgtext1{
+  display: grid;
+  grid-column: 5/8;
+  justify-items: center;
+  align-content: center;
+  margin-left: 10%;
+}
+
 .stgimg2{
   display: grid;
   grid-column: 5/8;
@@ -75,6 +83,15 @@ text{
   box-shadow: 10px 10px rgb(5, 48, 108);
   border-radius: 15px;
 }
+
+.stgtext2{
+  display: grid;
+  grid-column: 2/5;
+  justify-items: center;
+  align-content: center;
+  grid-row: 1;
+}
+
 
 .test{
   display: grid;

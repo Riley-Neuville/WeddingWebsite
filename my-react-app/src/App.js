@@ -1,19 +1,15 @@
 import './App.css';
-import React from 'react';
+import React, {useRef} from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 function App() {
-  
+  const ref = useRef();
 
   return (
     <div>
       <div id='topofpage'></div>
-      <div className='sidenav'>
-            <a href="#topofpage" className='anchor1'>R+A</a>
-            <a href="#topofpage" className='anchor3'>RSVP</a>
-            <a href="#topofpage" className='anchor2'>Gallery</a>
-        </div>
-      <Parallax pages={5} style={{top: '0', left: '0'}}>
+      
+      <Parallax ref={ref} pages={5} style={{top: '0', left: '0'}}>
         <ParallaxLayer className= 'gridLayerFirst' offset={0} speed={0.05}>
           
 
@@ -44,16 +40,26 @@ function App() {
       <ParallaxLayer className= 'gridLayer' offset={1.2} speed={0.4}>
 
         <img src='46400.jpeg' alt='' className='stgimg1'></img>
+        <div className='stgtext1'>
+          <h1>March 12th 2024</h1>
+          <h2>Stockholm, Sweden</h2>
+          <p>After almost ruining the surprise for multiple days Riley asked Alexis to marry him. Despite taking on a british accent and insisting she was "gobsmacked" multiple times, she did eventually say yes!</p>
+        </div>
 
       </ParallaxLayer>
 
-      <ParallaxLayer className='gridLayer' offset={2.2} speed={0.7}>
+      <ParallaxLayer className='gridLayer' offset={2} speed={1}>
 
         <img src= '_NOR2242-HDR.jpg' alt='' className='stgimg2'></img>
+        <div className='stgtext2'>
+        <h1>June 15th 2025</h1>
+          <h2>Saint Louis Missouri</h2>
+          <p>We are beyond excited to celebrate this wedding with everyone at Saint Xavier College Church and the Grand Hall at Union Station.</p>
+        </div>
 
       </ParallaxLayer>
 
-      <ParallaxLayer className='gridLayerRows' offset={3} speed={0.5}>
+      <ParallaxLayer className='gridLayerRows' offset={3.2} speed={0.5}>
         <div className='QContainer1'>
         <h1>The Date</h1>
         <h2>June 14th 2025</h2>
@@ -95,6 +101,12 @@ function App() {
 
 
     </Parallax>
+
+    <div className='sidenav'>
+            <a href="#" onClick={() => ref.current.scrollTo(0)} className='anchor1'>R+A</a>
+            <a href="#" onClick={() => ref.current.scrollTo(0)} className='anchor3'>RSVP</a>
+            <a href="#" onClick={() => ref.current.scrollTo(0)} className='anchor2'>Gallery</a>
+        </div>
 
     </div>
   );
