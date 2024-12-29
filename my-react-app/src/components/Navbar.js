@@ -1,40 +1,32 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
+import "../Navbar.css";
 
-function Navbar ()  {
-    const linkStyle = {
-        color: 'white', // Set the font color to white
-        textDecoration: 'none', // Remove underline
-        textShadow: '-1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black' // Add text shadow for black border
-    };
-return(
+function Navbar() {
+  return (
     <>
-    <nav className='navbar'>
-        <div className='navbar-container'>
-            <nav>
-                <ul>
-                    <li>
-                        <a style={linkStyle} href='/'>Home</a>
-                    </li>
-                    <li>
-                        <a style={linkStyle} href='/'>Schedule</a>
-                    </li>
-                    <li>
-                        <a style={linkStyle} href='/'>Travel</a>
-                    </li>
-                    <li>
-                        <a style={linkStyle} href='/'>Registry</a>
-                    </li>
-                    <li>
-                        <a style={linkStyle} href='/'>FAQs</a>
-                    </li>
-                </ul>
-                </nav>
-        </div>
-    </nav>
+      {/* Navbar */}
+      <div className="navbar">
+        <a href="/" className="anchor1">
+          R+A
+        </a>
+        <a
+          href="https://withjoy.com/alexis-and-riley-jun-25/rsvp"
+          target="_blank"
+          className="anchor3"
+        >
+          RSVP
+        </a>
+        <a href="/gallery" className="anchor2">
+          Gallery
+        </a>
+        <a href="/faq" className="anchor4">
+          FAQs
+        </a>
+        <a href="/party" className="anchor5">
+          Party
+        </a>
+      </div>
     </>
-)
-
-
+  );
 }
-
 export default Navbar;

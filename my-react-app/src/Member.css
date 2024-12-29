@@ -1,0 +1,39 @@
+.member {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.partyGrid {
+  display: grid;
+  grid-template-columns: 35px 1fr 1fr;
+  gap: 10px; /* Optional: Adds spacing between grid items */
+}
+
+.partyM {
+  display: grid;
+  grid-column: 2;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: rgb(19, 8, 63);
+}
+
+.partyW {
+  display: grid;
+  grid-column: 3;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: rgb(174, 27, 174);
+}
+
+/* Add responsive behavior using a media query */
+@media (max-width: 600px) {
+  .partyGrid {
+    grid-template-columns: 35px 1fr; /* Change to a single column */
+  }
+
+  .partyM,
+  .partyW {
+    grid-column: 2; /* Ensure items stack naturally in one column */
+  }
+}
