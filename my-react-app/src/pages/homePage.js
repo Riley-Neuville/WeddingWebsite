@@ -119,10 +119,7 @@ function HomePage() {
           </div>
 
           <div className="QContainer5">
-            <h1>Things to do!</h1>
-            <p>Restaurants:</p>
-            <p>Bars:</p>
-            <p>Coffee Shops:</p>
+            <h1>What do we want here?</h1>
           </div>
         </ParallaxLayer>
       </Parallax>
