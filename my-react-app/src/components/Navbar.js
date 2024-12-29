@@ -6,7 +6,7 @@ function Navbar() {
     <>
       {/* Navbar */}
       <div className="navbar">
-        <a href="/" className="anchor1">
+        <a href="/#/" className="anchor1">
           R+A
         </a>
         <a
@@ -16,13 +16,13 @@ function Navbar() {
         >
           RSVP
         </a>
-        <a href="/gallery" className="anchor2">
+        <a href="/#/gallery" className="anchor2">
           Gallery
         </a>
-        <a href="/faq" className="anchor4">
+        <a href="/#/faq" className="anchor4">
           FAQs
         </a>
-        <a href="/party" className="anchor5">
+        <a href="/#/party" className="anchor5">
           Party
         </a>
       </div>

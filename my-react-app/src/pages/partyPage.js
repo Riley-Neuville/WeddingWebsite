@@ -1,5 +1,5 @@
 import "../Home.css";
-import React, { useRef } from "react";
+import React from "react";
 import Navbar from "../components/Navbar.js";
 import Member from "../components/Member.js";
 import "../Member.css";

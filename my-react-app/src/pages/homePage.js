@@ -1,18 +1,20 @@
 import "../Home.css";
-import React, { useRef } from "react";
+import React from "react";
 import Navbar from "../components/Navbar.js";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function HomePage() {
-  const ref = useRef();
-
   return (
     <div>
       <div id="topofpage"></div>
 
-      <Parallax ref={ref} pages={5} style={{ top: "0", left: "0" }}>
+      <Parallax pages={5} style={{ top: "0", left: "0" }}>
         <ParallaxLayer className="gridLayerFirst" offset={0} speed={0.05}>
-          <img src="WDBackground.jpg" alt="" className="bgImage"></img>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/WDBackground.jpg`}
+            alt=""
+            className="bgImage"
+          ></img>
         </ParallaxLayer>
 
         <ParallaxLayer className="gridLayer" offset={0} speed={0.5}>
@@ -29,7 +31,11 @@ function HomePage() {
         </ParallaxLayer>
 
         <ParallaxLayer className="gridLayer" offset={1.2} speed={0.4}>
-          <img src="46400.jpeg" alt="" className="stgimg1"></img>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/46400.jpeg`}
+            alt=""
+            className="stgimg1"
+          ></img>
           <div className="stgtext1">
             <h1>March 12th 2024</h1>
             <h2>Stockholm, Sweden</h2>
@@ -43,7 +49,11 @@ function HomePage() {
         </ParallaxLayer>
 
         <ParallaxLayer className="gridLayer" offset={2} speed={1}>
-          <img src="_NOR2242-HDR.jpg" alt="" className="stgimg2"></img>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/_NOR2242-HDR.jpg`}
+            alt=""
+            className="stgimg2"
+          ></img>
           <div className="stgtext2">
             <h1>June 14th 2025</h1>
             <h2>Saint Louis Missouri</h2>
@@ -69,7 +79,10 @@ function HomePage() {
               href="https://www.google.com/maps/place/Saint+Francis+Xavier+College+Church,+St.+Louis,+MO+63108/@38.6370557,-90.2360898,17z/data=!3m1!4b1!4m6!3m5!1s0x87d8b4a4aa1ee079:0x7a22a35782f66212!8m2!3d38.6370515!4d-90.2335149!16s%2Fg%2F1ptwbx3_q?entry=ttu"
               target="_blank"
             >
-              <img src="mapIcon.png" className="maplink"></img>
+              <img
+                src={`${process.env.PUBLIC_URL}/images/mapIcon.png`}
+                className="maplink"
+              ></img>
             </a>
           </div>
 
@@ -81,7 +94,10 @@ function HomePage() {
               href="https://www.google.com/maps/place/Grand+Hall+at+Union+Station/@38.6294104,-90.2084402,18.93z/data=!3m1!5s0x87d8b36b9f28aa79:0xd251b0676f2e4833!4m14!1m7!3m6!1s0x87d8b36ba6555555:0x7f664e16ad8e38b6!2sGrand+Hall+at+Union+Station!8m2!3d38.6289913!4d-90.2077475!16s%2Fg%2F11f63xl3rs!3m5!1s0x87d8b36ba6555555:0x7f664e16ad8e38b6!8m2!3d38.6289913!4d-90.2077475!16s%2Fg%2F11f63xl3rs?entry=ttu"
               target="_blank"
             >
-              <img src="mapIcon.png" className="maplink"></img>
+              <img
+                src={`${process.env.PUBLIC_URL}/images/mapIcon.png`}
+                className="maplink"
+              ></img>
             </a>
           </div>
 
@@ -96,7 +112,10 @@ function HomePage() {
             </a>
             <a>Google Maps link</a>
             <a href="">Drury Inn</a>
-            <img src="mapIcon.png" className="maplink"></img>
+            <img
+              src={`${process.env.PUBLIC_URL}/images/mapIcon.png`}
+              className="maplink"
+            ></img>
           </div>
 
           <div className="QContainer5">

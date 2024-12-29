@@ -1,8 +1,7 @@
-import "./App.css";
-import React, { useRef } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 import {
-  HashRouter as Router, // Use HashRouter instead of BrowserRouter
+  HashRouter as Router,
   Routes,
   Route,
   Navigate,
@@ -13,21 +12,18 @@ import PartyPage from "./pages/partyPage";
 import FaqPage from "./pages/faqPage";
 
 function App() {
-  const ref = useRef();
-
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<HomePage />} />
-        <Route exact path="/party" element={<PartyPage />} />
-        <Route exact path="/faq" element={<FaqPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/party" element={<PartyPage />} />
+        <Route path="/faq" element={<FaqPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
+        {/* Redirect unknown paths to the home page */}
+        <Route path="*" element={<Navigate to="/#/" />} />
       </Routes>
     </Router>
   );
 }
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
 
 export default App;
