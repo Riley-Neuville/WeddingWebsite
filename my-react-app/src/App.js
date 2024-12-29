@@ -2,7 +2,7 @@ import "./App.css";
 import React, { useRef } from "react";
 import ReactDOM from "react-dom/client";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router, // Use HashRouter instead of BrowserRouter
   Routes,
   Route,
   Navigate,
