@@ -50,7 +50,7 @@ function HomePage() {
 
         <ParallaxLayer className="gridLayer" offset={2} speed={1}>
           <img
-            src={`${process.env.PUBLIC_URL}/images/_NOR2242-HDR.jpg`}
+            src={`${process.env.PUBLIC_URL}/images/NOR2242-HDR.jpg`}
             alt=""
             className="stgimg2"
           ></img>
