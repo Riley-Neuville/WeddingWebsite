@@ -25,7 +25,7 @@ text {
   justify-content: space-between; /* Evenly distribute columns */
   gap: 10px; /* Add spacing between columns */
   margin-top: auto;
-  margin-left: 35px;
+  margin: 10px;
 }
 
 /* Individual column */
@@ -50,78 +50,13 @@ text {
   justify-content: center;
   align-items: center;
   margin-top: auto;
-  margin-left: 35px;
+  margin: 10px;
 }
 /* Responsive design */
 @media (max-width: 800px) {
   .gallery {
     flex-direction: column; /* Switch to one column on smaller screens */
   }
-}
-
-/* Navbar styles */
-.navbar {
-  display: grid;
-
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 35px;
-  height: 100vh;
-
-  justify-content: center;
-  align-items: center;
-  z-index: 50000;
-  padding: 0%;
-}
-a:link,
-a:hover,
-a:active,
-a:visited {
-  color: rgb(4, 4, 71);
-  text-decoration: none;
-  font-weight: 400;
-}
-
-.anchor1 {
-  display: grid;
-  grid-row: 1;
-  writing-mode: vertical-lr;
-  transform: rotate(-180deg);
-  letter-spacing: 5px;
-}
-
-.anchor2 {
-  display: grid;
-  grid-row: 5;
-  writing-mode: vertical-lr;
-  transform: rotate(-180deg);
-  letter-spacing: 5px;
-}
-
-.anchor3 {
-  display: grid;
-  grid-row: 3;
-  writing-mode: vertical-lr;
-  transform: rotate(-180deg);
-  letter-spacing: 5px;
-}
-
-.anchor4 {
-  display: grid;
-  grid-row: 2;
-  writing-mode: vertical-lr;
-  transform: rotate(-180deg);
-  letter-spacing: 5px;
-}
-
-.anchor5 {
-  display: grid;
-  grid-row: 4;
-  writing-mode: vertical-lr;
-  transform: rotate(-180deg);
-  letter-spacing: 5px;
 }
 
 .loading-spinner {

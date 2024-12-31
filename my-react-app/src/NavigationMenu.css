@@ -1,0 +1,76 @@
+.nav-bubble {
+  position: fixed;
+  top: 20px; /* Top-right placement */
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(4, 4, 71);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease, height 0.3s ease, border-radius 0.3s ease,
+    top 0.3s ease, right 0.3s ease;
+  z-index: 1000;
+}
+
+.nav-bubble.expanded {
+  width: 25%; /* Takes up 1/4th of the screen width */
+  height: 100%;
+  border-radius: 0;
+  top: 0;
+  right: 0;
+  background-color: rgb(4, 4, 71);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.menu-icon {
+  font-size: 24px;
+  color: white;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; /* Increased vertical spacing */
+}
+
+.menu-list li {
+  width: 100%;
+  text-align: center;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px; /* Increased font size */
+  position: relative;
+  transition: color 0.2s;
+}
+
+.menu-list li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Space below text */
+  height: 2px;
+  width: 0;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.menu-list li a:hover::after {
+  width: 100%; /* Expanding underline effect */
+}

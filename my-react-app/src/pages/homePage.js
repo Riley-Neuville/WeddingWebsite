@@ -1,14 +1,15 @@
 import "../Home.css";
 import React from "react";
 import Navbar from "../components/Navbar.js";
+import NavigationMenu from "../components/NavigationMenu.js";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function HomePage() {
   return (
     <div>
       <div id="topofpage"></div>
-
-      <Parallax pages={5} style={{ top: "0", left: "0" }}>
+      <NavigationMenu />
+      <Parallax pages={6} style={{ top: "0", left: "0" }}>
         <ParallaxLayer className="gridLayerFirst" offset={0} speed={0.05}>
           <img
             src={`${process.env.PUBLIC_URL}/images/WDBackground.jpg`}
@@ -30,7 +31,15 @@ function HomePage() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer className="gridLayer" offset={1.2} speed={0.4}>
+        <ParallaxLayer className="gridLayer" offset={1.3} speed={0.4}>
+          <h1>June 14th 2025</h1>
+          <button
+            onclick="location.href='https://withjoy.com/alexis-and-riley-jun-25/rsvp'"
+            type="button"
+          >
+            RSVP Here!
+          </button>
+
           <img
             src={`${process.env.PUBLIC_URL}/images/46400.jpeg`}
             alt=""
@@ -48,7 +57,7 @@ function HomePage() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer className="gridLayer" offset={2} speed={1}>
+        <ParallaxLayer className="gridLayer" offset={2.2} speed={1}>
           <img
             src={`${process.env.PUBLIC_URL}/images/NOR2242-HDR.jpg`}
             alt=""
@@ -119,12 +128,21 @@ function HomePage() {
           </div>
 
           <div className="QContainer5">
-            <h1>What do we want here?</h1>
+            <h1>Registry</h1>
+            <p>
+              Your presence is the greatest gift of all, but if you'd like to
+              contribute in another way, we'd be grateful for any items off our
+              registry!
+            </p>
+            <a
+              href="https://withjoy.com/alexis-and-riley-jun-25/registry"
+              target="_blank"
+            >
+              Click Here
+            </a>
           </div>
         </ParallaxLayer>
       </Parallax>
-
-      <Navbar />
     </div>
   );
 }

@@ -1,13 +1,13 @@
 import "../Home.css";
 import React from "react";
-import Navbar from "../components/Navbar.js";
+import NavigationMenu from "../components/NavigationMenu.js";
 import Member from "../components/Member.js";
 import "../Member.css";
 
 function PartyPage() {
   return (
     <div>
-      <Navbar />
+      <NavigationMenu />
       <div className="partyGrid">
         <div className="partyM">
           <Member name="Matt Gall" description="Best Man" />

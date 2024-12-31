@@ -1,12 +1,12 @@
 import "../Home.css";
 import React, { useRef } from "react";
-import Navbar from "../components/Navbar.js";
+import NavigationMenu from "../components/NavigationMenu";
 import "../Faq.css";
 
 function FaqPage() {
   return (
     <div className="App">
-      <Navbar />
+      <NavigationMenu />
       <div className="grid">
         <div className="faqs">
           <h1>Is There A Dress code?</h1>

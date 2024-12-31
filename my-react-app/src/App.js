@@ -10,10 +10,12 @@ import HomePage from "./pages/homePage";
 import GalleryPage from "./pages/galleryPage";
 import PartyPage from "./pages/partyPage";
 import FaqPage from "./pages/faqPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/party" element={<PartyPage />} />
