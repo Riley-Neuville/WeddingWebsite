@@ -1,6 +1,5 @@
 import "../Home.css";
 import React from "react";
-import Navbar from "../components/Navbar.js";
 import NavigationMenu from "../components/NavigationMenu.js";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
@@ -16,6 +15,16 @@ function HomePage() {
             alt=""
             className="bgImage"
           ></img>
+          <br />
+          <h1 className="datetext">Please Join Us June 14th 2025!</h1>
+          <br />
+          <a
+            href="https://withjoy.com/alexis-and-riley-jun-25/rsvp"
+            target="_blank"
+            className="rsvp-button"
+          >
+            <span className="rsvptext">RSVP Here!</span>
+          </a>
         </ParallaxLayer>
 
         <ParallaxLayer className="gridLayer" offset={0} speed={0.5}>
@@ -31,22 +40,13 @@ function HomePage() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer className="gridLayer" offset={1.3} speed={0.4}>
-          <h1>June 14th 2025</h1>
-          <button
-            onclick="location.href='https://withjoy.com/alexis-and-riley-jun-25/rsvp'"
-            type="button"
-          >
-            RSVP Here!
-          </button>
-
+        <ParallaxLayer className="gridLayer" offset={1.5} speed={0.35}>
           <img
             src={`${process.env.PUBLIC_URL}/images/46400.jpeg`}
             alt=""
             className="stgimg1"
           ></img>
           <div className="stgtext1">
-            <h1>March 12th 2024</h1>
             <h2>Stockholm, Sweden</h2>
             <p>
               After almost ruining the surprise for multiple days Riley asked
@@ -57,14 +57,13 @@ function HomePage() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer className="gridLayer" offset={2.2} speed={1}>
+        <ParallaxLayer className="gridLayer" offset={2} speed={0.75}>
           <img
             src={`${process.env.PUBLIC_URL}/images/NOR2242-HDR.jpg`}
             alt=""
             className="stgimg2"
           ></img>
           <div className="stgtext2">
-            <h1>June 14th 2025</h1>
             <h2>Saint Louis Missouri</h2>
             <p>
               We are beyond excited to celebrate this wedding with everyone at

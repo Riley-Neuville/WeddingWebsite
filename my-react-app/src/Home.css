@@ -3,7 +3,23 @@ html {
   margin: 0;
   height: 100%;
   background-color: #eff8ff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+
   scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+div {
+  color: rgb(2, 2, 40);
 }
 
 body {
@@ -18,6 +34,42 @@ text {
   color: rgb(4, 4, 71);
 }
 
+.rsvp-button {
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: rgb(4, 4, 71);
+  color: white;
+  font-size: 20px; /* Slightly larger font size */
+  font-weight: bold;
+  padding: 15px 40px; /* Adjust padding for rectangle size */
+  border-radius: 15px; /* Rounded corners */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none; /* Ensure the link doesn’t have underlines */
+  height: 100px;
+  display: grid;
+  grid-column: 4/6;
+  grid-row: 3;
+}
+
+.rsvp-button span {
+  display: inline-block; /* Ensures proper alignment */
+}
+
+.rsvp-button:hover {
+  background-color: rgb(10, 10, 147); /* Highlight color */
+  transform: translateY(-3px); /* Slight lift effect */
+}
+
+.rsvp-button:active {
+  transform: translateY(0); /* Reset lift effect on click */
+}
+.rsvptext {
+  color: white;
+}
+
 .gridLayer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -27,7 +79,7 @@ text {
 .gridLayerFirst {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px 1fr 100px;
+  grid-template-rows: 100px 1fr 200px 100px;
   gap: 10px;
 }
 
@@ -148,23 +200,15 @@ path {
   grid-row: 5;
 }
 
-a:link,
-a:hover,
-a:active,
-a:visited {
-  color: rgb(4, 4, 71);
-  text-decoration: none;
-}
-
 .maplink {
   width: 3rem;
 }
 
 .datetext {
   display: grid;
+  grid-column: 1/4;
   grid-row: 3;
-  grid-column: 4/6;
-  justify-content: center;
+  font-size: clamp(26px, 3vw, 48px);
 }
 
 /* Responsive adjustments */
