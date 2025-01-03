@@ -22,7 +22,7 @@
   border-radius: 0;
   top: 0;
   right: 0;
-  background: linear-gradient(to right, black, 7%, rgb(4, 4, 71));
+  background: linear-gradient(to right, black, 4%, rgb(4, 4, 71));
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -33,6 +33,7 @@
 @media (min-width: 600px) {
   .nav-bubble.expanded {
     width: 17.5%;
+    background: linear-gradient(to right, black, 7%, rgb(4, 4, 71));
   }
 }
 .menu-icon {

@@ -1,15 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "../NavigationMenu.css";
 
 const NavigationMenu = () => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const menuRef = useRef(null);
 
   const toggleMenu = () => {
     setIsExpanded((prev) => !prev);
   };
 
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setIsExpanded(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <div
+      ref={menuRef}
       className={`nav-bubble ${isExpanded ? "expanded" : ""}`}
       onClick={toggleMenu}
     >
@@ -22,6 +37,7 @@ const NavigationMenu = () => {
             <a
               href="https://withjoy.com/alexis-and-riley-jun-25/rsvp"
               target="_blank"
+              rel="noopener noreferrer"
             >
               RSVP
             </a>
@@ -39,6 +55,7 @@ const NavigationMenu = () => {
             <a
               href="https://withjoy.com/alexis-and-riley-jun-25/registry"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Registry
             </a>
