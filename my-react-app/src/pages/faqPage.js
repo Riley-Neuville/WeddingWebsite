@@ -11,8 +11,8 @@ function FaqPage() {
         <div className="faqs">
           <h1>Is There A Dress code?</h1>
           <p>
-            Black tie optional. For women, floor length gowns, and for men,
-            tuxes or suit and tie.
+            Black tie optional. For women, mid to full length dresses, and for
+            men, tuxes or suit and tie.
           </p>
           <h1>Are kids invited to the event?</h1>
           <p>While we adore all your children, this is an adults-only event.</p>

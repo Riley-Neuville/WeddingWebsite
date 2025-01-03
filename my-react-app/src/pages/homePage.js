@@ -15,9 +15,7 @@ function HomePage() {
             alt=""
             className="bgImage"
           ></img>
-          <br />
           <h1 className="datetext">Please Join Us June 14th 2025!</h1>
-          <br />
           <a
             href="https://withjoy.com/alexis-and-riley-jun-25/rsvp"
             target="_blank"
@@ -40,7 +38,11 @@ function HomePage() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer className="gridLayer" offset={1.5} speed={0.35}>
+        <ParallaxLayer
+          className="gridLayer"
+          offset={window.innerWidth < 768 ? 1.1 : 1.4}
+          speed={0.35}
+        >
           <img
             src={`${process.env.PUBLIC_URL}/images/46400.jpeg`}
             alt=""
@@ -57,7 +59,11 @@ function HomePage() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer className="gridLayer" offset={2} speed={0.75}>
+        <ParallaxLayer
+          className="gridLayer"
+          offset={window.innerWidth < 768 ? 2.1 : 2}
+          speed={0.75}
+        >
           <img
             src={`${process.env.PUBLIC_URL}/images/NOR2242-HDR.jpg`}
             alt=""

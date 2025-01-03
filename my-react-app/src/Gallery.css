@@ -44,6 +44,15 @@ text {
   object-fit: cover; /* Optional: ensure proper scaling */
 }
 
+.gallery-image {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.gallery-image.loaded {
+  opacity: 1;
+}
+
 .gallery-header {
   display: flex;
   flex-direction: column;

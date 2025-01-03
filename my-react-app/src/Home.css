@@ -50,8 +50,8 @@ text {
   text-decoration: none; /* Ensure the link doesn’t have underlines */
   height: 100px;
   display: grid;
-  grid-column: 4/6;
-  grid-row: 3;
+  grid-column: 3/5;
+  grid-row: 4;
 }
 
 .rsvp-button span {
@@ -79,7 +79,7 @@ text {
 .gridLayerFirst {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px 1fr 200px 100px;
+  grid-template-rows: 100px 1fr 200px 10px 100px;
   gap: 10px;
 }
 
@@ -106,7 +106,8 @@ text {
   grid-column-end: -1;
   grid-row: 2;
   width: 100%;
-  object-fit: contain;
+  height: auto; /* Ensures the height adjusts proportionally */
+  object-fit: cover; /* Makes the image cover the area without distortion */
 }
 
 .stgimg1 {
@@ -206,9 +207,11 @@ path {
 
 .datetext {
   display: grid;
-  grid-column: 1/4;
+  grid-column: 1/-1;
   grid-row: 3;
   font-size: clamp(26px, 3vw, 48px);
+  align-items: center;
+  justify-content: center;
 }
 
 /* Responsive adjustments */
@@ -227,7 +230,9 @@ path {
   .stgtext2 {
     grid-column: 1 / -1; /* Make each element span full width */
   }
-
+  .stgtext2 {
+    grid-row: 2;
+  }
   .QContainer1,
   .QContainer2,
   .QContainer3,
@@ -236,6 +241,9 @@ path {
     height: 400px;
     grid-column: 1 / -1; /* Stack containers vertically */
     margin: 10px; /* Add spacing between items */
+  }
+  .rsvp-button {
+    grid-column: 2;
   }
 }
 
@@ -246,11 +254,6 @@ path {
 
   .gridLayerFirst {
     grid-template-columns: 1fr; /* Single column layout */
-  }
-
-  .textoverlay {
-    font-size: 24px; /* Reduce text size */
-    left: 20%; /* Adjust position */
   }
 
   .stgimg1,
@@ -267,5 +270,16 @@ path {
   .QContainer5 {
     grid-column: 1 / -1;
     margin: 10px;
+  }
+  .rsvp-button {
+    grid-column: 1;
+  }
+  .textoverlay {
+    position: absolute;
+    top: 10%;
+    left: 32%;
+    z-index: 100;
+    font-size: 35px;
+    fill: rgb(4, 4, 71);
   }
 }
