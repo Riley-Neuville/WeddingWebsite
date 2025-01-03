@@ -110,6 +110,10 @@ text {
   object-fit: cover; /* Makes the image cover the area without distortion */
 }
 
+.bgImageMobile {
+  display: none;
+}
+
 .stgimg1 {
   display: grid;
   grid-column: 1/3;
@@ -281,5 +285,17 @@ path {
     z-index: 100;
     font-size: 35px;
     fill: rgb(4, 4, 71);
+  }
+  .bgImageMobile {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row: 2;
+    width: 100%;
+    height: auto; /* Ensures the height adjusts proportionally */
+    object-fit: cover; /* Makes the image cover the area without distortion */
+  }
+  .bgImage {
+    display: none;
   }
 }

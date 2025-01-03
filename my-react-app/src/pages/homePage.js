@@ -15,6 +15,11 @@ function HomePage() {
             alt=""
             className="bgImage"
           ></img>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/WDBackgroundMobile.jpg`}
+            alt=""
+            className="bgImageMobile"
+          ></img>
           <h1 className="datetext">Please Join Us June 14th 2025!</h1>
           <a
             href="https://withjoy.com/alexis-and-riley-jun-25/rsvp"
