@@ -45,7 +45,7 @@ function HomePage() {
 
         <ParallaxLayer
           className="gridLayer"
-          offset={window.innerWidth < 768 ? 1.1 : 1.4}
+          offset={window.innerWidth < 768 ? 1.2 : 1.5}
           speed={0.35}
         >
           <img
@@ -84,72 +84,101 @@ function HomePage() {
         </ParallaxLayer>
 
         <ParallaxLayer className="gridLayerRows" offset={3.2} speed={0.5}>
-          <div className="QContainer1">
-            <h1>The Date</h1>
-            <h2>June 14th 2025</h2>
-            <p>3PM CST</p>
-          </div>
-
           <div className="QContainer2">
             <h1>The Ceremony</h1>
-            <h2>Saint Francis Xavier College Church</h2>
-            <p>3628 Lindell Blvd, St. Louis, MO 63108</p>
             <a
+              className="qlink"
               href="https://www.google.com/maps/place/Saint+Francis+Xavier+College+Church,+St.+Louis,+MO+63108/@38.6370557,-90.2360898,17z/data=!3m1!4b1!4m6!3m5!1s0x87d8b4a4aa1ee079:0x7a22a35782f66212!8m2!3d38.6370515!4d-90.2335149!16s%2Fg%2F1ptwbx3_q?entry=ttu"
               target="_blank"
             >
-              <img
-                src={`${process.env.PUBLIC_URL}/images/mapIcon.png`}
-                className="maplink"
-              ></img>
+              <h2>Saint Francis Xavier College Church</h2>
             </a>
+            <a
+              className="qlink"
+              href="https://www.google.com/maps/place/Saint+Francis+Xavier+College+Church,+St.+Louis,+MO+63108/@38.6370557,-90.2360898,17z/data=!3m1!4b1!4m6!3m5!1s0x87d8b4a4aa1ee079:0x7a22a35782f66212!8m2!3d38.6370515!4d-90.2335149!16s%2Fg%2F1ptwbx3_q?entry=ttu"
+              target="_blank"
+            >
+              <p>3628 Lindell Blvd, St. Louis, MO 63108</p>
+            </a>
+
+            <p>June 14th 3PM CST</p>
           </div>
 
           <div className="QContainer3">
             <h1>The Reception</h1>
-            <h2>The Grand Hall at Union Station</h2>
-            <p>1820 Market St, St. Louis, MO 63103</p>
             <a
+              className="qlink"
               href="https://www.google.com/maps/place/Grand+Hall+at+Union+Station/@38.6294104,-90.2084402,18.93z/data=!3m1!5s0x87d8b36b9f28aa79:0xd251b0676f2e4833!4m14!1m7!3m6!1s0x87d8b36ba6555555:0x7f664e16ad8e38b6!2sGrand+Hall+at+Union+Station!8m2!3d38.6289913!4d-90.2077475!16s%2Fg%2F11f63xl3rs!3m5!1s0x87d8b36ba6555555:0x7f664e16ad8e38b6!8m2!3d38.6289913!4d-90.2077475!16s%2Fg%2F11f63xl3rs?entry=ttu"
               target="_blank"
             >
-              <img
-                src={`${process.env.PUBLIC_URL}/images/mapIcon.png`}
-                className="maplink"
-              ></img>
+              <h2>The Grand Hall at Union Station</h2>
             </a>
+            <a
+              className="qlink"
+              href="https://www.google.com/maps/place/Grand+Hall+at+Union+Station/@38.6294104,-90.2084402,18.93z/data=!3m1!5s0x87d8b36b9f28aa79:0xd251b0676f2e4833!4m14!1m7!3m6!1s0x87d8b36ba6555555:0x7f664e16ad8e38b6!2sGrand+Hall+at+Union+Station!8m2!3d38.6289913!4d-90.2077475!16s%2Fg%2F11f63xl3rs!3m5!1s0x87d8b36ba6555555:0x7f664e16ad8e38b6!8m2!3d38.6289913!4d-90.2077475!16s%2Fg%2F11f63xl3rs?entry=ttu"
+              target="_blank"
+            >
+              <p>1820 Market St, St. Louis, MO 63103</p>
+            </a>
+            <p>June 14th 5PM CST</p>
           </div>
 
           <div className="QContainer4">
-            <h1>Lodging</h1>
-
+            <h1>Farewell Brunch</h1>
             <a
-              href="https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=STLCUQQ&arrivalDate=2025-06-13&departureDate=2025-06-15&groupCode=SNW25&room1NumAdults=1"
+              className="qlink"
+              href="https://www.google.com/maps/place/29+Washington+Terrace,+St.+Louis,+MO+63112/@38.6524126,-90.2813946,17z/data=!3m1!4b1!4m6!3m5!1s0x87d8b5352c40ae7b:0x9ef069aaf5b24c2d!8m2!3d38.6524084!4d-90.2788197!16s%2Fg%2F11sv047l37?entry=ttu&g_ep=EgoyMDI1MDEwMi4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
             >
-              Union Station Hotel
+              <h2>Mr. and Mrs.Short's Home</h2>
             </a>
-            <a>Google Maps link</a>
-            <a href="">Drury Inn</a>
-            <img
-              src={`${process.env.PUBLIC_URL}/images/mapIcon.png`}
-              className="maplink"
-            ></img>
+            <a
+              className="qlink"
+              href="https://www.google.com/maps/place/29+Washington+Terrace,+St.+Louis,+MO+63112/@38.6524126,-90.2813946,17z/data=!3m1!4b1!4m6!3m5!1s0x87d8b5352c40ae7b:0x9ef069aaf5b24c2d!8m2!3d38.6524084!4d-90.2788197!16s%2Fg%2F11sv047l37?entry=ttu&g_ep=EgoyMDI1MDEwMi4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+            >
+              <p>29 Washington Terrace, St. Louis, MO 63103</p>
+            </a>
+            <p>June 15th 11AM CST</p>
           </div>
 
           <div className="QContainer5">
-            <h1>Registry</h1>
-            <p>
-              Your presence is the greatest gift of all, but if you'd like to
-              contribute in another way, we'd be grateful for any items off our
-              registry!
-            </p>
+            <h1>Lodging</h1>
+
             <a
-              href="https://withjoy.com/alexis-and-riley-jun-25/registry"
+              className="qlink"
+              href="https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=STLCUQQ&arrivalDate=2025-06-13&departureDate=2025-06-15&groupCode=SNW25&room1NumAdults=1"
               target="_blank"
             >
-              Click Here
+              <h2>Union Station Hotel</h2>
             </a>
+            <a
+              className="qlink"
+              href="https://www.google.com/maps/place/St.+Louis+Union+Station+Hotel,+Curio+Collection+by+Hilton/@38.6287235,-90.210163,17z/data=!3m1!5s0x87d8b36b9f28aa79:0x61c45a2316a79ab4!4m9!3m8!1s0x87d8b31de5f5865d:0xa0a4a4e039774dd1!5m2!4m1!1i2!8m2!3d38.6287193!4d-90.2075881!16s%2Fg%2F1tf9nt4r?entry=ttu&g_ep=EgoyMDI1MDEwMi4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+            >
+              <p>1820 Market St, St. Louis, MO 63103</p>
+            </a>
+            <a
+              className="qlink"
+              href="https://www.druryhotels.com/locations/st-louis-mo/drury-inn-and-suites-st-louis-union-station?utm_campaign=gmb&utm_medium=organic&utm_source=local2"
+              target="_blank"
+            >
+              <h2>Alternative Option: Drury Inn</h2>
+            </a>
+            <a
+              className="qlink"
+              href="https://www.google.com/maps/place/Drury+Inn+St.+Louis+At+Union+Station/@38.6277926,-90.2125594,17z/data=!3m1!4b1!4m9!3m8!1s0x87d8b36960362803:0x8c7be5ef059058d1!5m2!4m1!1i2!8m2!3d38.6277884!4d-90.2099845!16s%2Fg%2F1tcvptjb?entry=ttu&g_ep=EgoyMDI1MDEwMi4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+            >
+              <p>201 S 20th St, St. Louis, MO 63103</p>
+            </a>
+          </div>
+
+          <div className="QContainer1">
+            <h1>Welcome Drinks</h1>
+            <h2>TBD</h2>
+            <p>June 13th 8:30 CST</p>
           </div>
         </ParallaxLayer>
       </Parallax>

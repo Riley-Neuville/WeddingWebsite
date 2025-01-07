@@ -62,7 +62,7 @@ const NavigationMenu = () => {
           </li>
         </ul>
       ) : (
-        <div className="menu-icon">☰</div> // Replace with an icon if desired
+        <div className="menu-icon">☰</div>
       )}
     </div>
   );
