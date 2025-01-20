@@ -58,6 +58,7 @@ text {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin-top: auto;
   margin: 10px;
 }
@@ -65,6 +66,9 @@ text {
 @media (max-width: 800px) {
   .gallery {
     flex-direction: column; /* Switch to one column on smaller screens */
+  }
+  .gallery-header {
+    margin-top: 70px;
   }
 }
 
@@ -84,5 +88,6 @@ text {
   grid-template-rows: 3;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 10px;
 }

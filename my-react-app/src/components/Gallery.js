@@ -40,7 +40,7 @@ const imagesPlusData = [
   },
   {
     src: require("../Images/27CD62FD-25D8-4692-9A46-34E9C81450ED.jpg"),
-    year: 2023,
+    year: 2022,
     dog: false,
     travel: false,
   },
@@ -154,7 +154,7 @@ const imagesPlusData = [
   },
   {
     src: require("../Images/D989878C-9439-4E2B-B73F-332963D306D1.jpg"),
-    year: 2020,
+    year: 2019,
     dog: false,
     travel: false,
   },
@@ -178,7 +178,7 @@ const imagesPlusData = [
   },
   {
     src: require("../Images/FB_IMG_1732476192127.jpg"),
-    year: 2018,
+    year: 2019,
     dog: false,
     travel: false,
   },
@@ -202,7 +202,7 @@ const imagesPlusData = [
   },
   {
     src: require("../Images/FE047D5D-9D35-40F8-B3A8-24D2556DCDA1.jpg"),
-    year: 2023,
+    year: 2022,
     dog: false,
     travel: false,
   },
@@ -232,13 +232,13 @@ const imagesPlusData = [
   },
   {
     src: require("../Images/IMG_0668.jpg"),
-    year: 2019,
+    year: 2017,
     dog: false,
     travel: true,
   },
   {
     src: require("../Images/IMG_0669.jpg"),
-    year: 2019,
+    year: 2017,
     dog: false,
     travel: true,
   },
@@ -256,19 +256,19 @@ const imagesPlusData = [
   },
   {
     src: require("../Images/IMG_0980.jpg"),
-    year: 2019,
+    year: 2018,
     dog: false,
     travel: false,
   },
   {
     src: require("../Images/IMG_0981.jpg"),
-    year: 2019,
+    year: 2018,
     dog: false,
     travel: false,
   },
   {
     src: require("../Images/IMG_1097.jpg"),
-    year: 2020,
+    year: 2017,
     dog: false,
     travel: false,
   },
@@ -286,7 +286,7 @@ const imagesPlusData = [
   },
   {
     src: require("../Images/IMG_1235 (1).jpg"),
-    year: 2021,
+    year: 2018,
     dog: false,
     travel: false,
   },
@@ -298,7 +298,7 @@ const imagesPlusData = [
   },
   {
     src: require("../Images/IMG_1275.jpg"),
-    year: 2020,
+    year: 2019,
     dog: false,
     travel: false,
   },
@@ -328,7 +328,7 @@ const imagesPlusData = [
   },
   {
     src: require("../Images/IMG_1359.jpg"),
-    year: 2018,
+    year: 2017,
     dog: false,
     travel: false,
   },
@@ -370,13 +370,13 @@ const imagesPlusData = [
   },
   {
     src: require("../Images/IMG_2518_Original.jpg"),
-    year: 2023,
+    year: 2022,
     dog: false,
     travel: false,
   },
   {
     src: require("../Images/IMG_2619.jpg"),
-    year: 2022,
+    year: 2021,
     dog: false,
     travel: false,
   },
@@ -478,19 +478,19 @@ const imagesPlusData = [
   },
   {
     src: require("../Images/IMG_5221.jpg"),
-    year: 2024,
+    year: 2022,
     dog: false,
     travel: false,
   },
   {
     src: require("../Images/IMG_5277.jpg"),
-    year: 2023,
+    year: 2022,
     dog: false,
     travel: false,
   },
   {
     src: require("../Images/IMG_5577.jpg"),
-    year: 2023,
+    year: 2024,
     dog: false,
     travel: false,
   },
@@ -508,7 +508,7 @@ const imagesPlusData = [
   },
   {
     src: require("../Images/IMG_5903.jpg"),
-    year: 2020,
+    year: 2019,
     dog: false,
     travel: true,
   },
@@ -670,7 +670,7 @@ const imagesPlusData = [
   },
   {
     src: require("../Images/IMG_8826.jpg"),
-    year: 2023,
+    year: 2020,
     dog: false,
     travel: false,
   },
@@ -682,7 +682,7 @@ const imagesPlusData = [
   },
   {
     src: require("../Images/IMG_9129.jpg"),
-    year: 2018,
+    year: 2017,
     dog: false,
     travel: false,
   },
@@ -706,7 +706,7 @@ const imagesPlusData = [
   },
   {
     src: require("../Images/IMG_9505.jpg"),
-    year: 2022,
+    year: 2021,
     dog: false,
     travel: true,
   },
@@ -871,6 +871,7 @@ const Gallery = () => {
         <label htmlFor="yearFilter">Filter by year: </label>
         <select id="yearFilter" onChange={handleFilterChange}>
           <option value="">All Years</option>
+          <option value="2017">2017</option>
           <option value="2018">2018</option>
           <option value="2019">2019</option>
           <option value="2020">2020</option>

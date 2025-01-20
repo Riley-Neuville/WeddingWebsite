@@ -9,7 +9,7 @@ function FaqPage() {
       <NavigationMenu />
       <div className="grid">
         <div className="faqs">
-          <h1>Is There A Dress code?</h1>
+          <h1>Is there a dress code?</h1>
           <p>
             Black tie optional. For women, mid to full length dresses, and for
             men, tuxes or suit and tie.
