@@ -10,6 +10,7 @@ import HomePage from "./pages/homePage";
 import GalleryPage from "./pages/galleryPage";
 import PartyPage from "./pages/partyPage";
 import FaqPage from "./pages/faqPage";
+import QuizPage from "./pages/quizPage";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/party" element={<PartyPage />} />
         <Route path="/faq" element={<FaqPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/trivia" element={<QuizPage />} />
         {/* Redirect unknown paths to the home page */}
         <Route path="*" element={<Navigate to="/#/" />} />
       </Routes>

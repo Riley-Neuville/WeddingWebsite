@@ -154,6 +154,7 @@ text {
   grid-column: 3/5;
   justify-items: center;
   align-content: center;
+  text-align: center;
   margin-left: 10%;
 }
 
@@ -171,6 +172,7 @@ text {
   grid-column: 1/3;
   justify-items: center;
   align-content: center;
+  text-align: center;
   grid-row: 1;
   margin-left: 10%;
 }
@@ -244,6 +246,26 @@ path {
   font-size: clamp(26px, 3vw, 48px);
   align-items: center;
   justify-content: center;
+}
+
+.goodbyeimg {
+  display: grid;
+  grid-column: 1/-1;
+  width: 100%;
+  object-fit: contain;
+  box-shadow: 10px 10px rgb(5, 48, 108);
+  border-radius: 15px;
+}
+.goodbyeimgmobile {
+  display: none;
+}
+
+.goodbyetxt {
+  display: grid;
+  grid-column: 1/-1;
+  justify-items: center;
+  align-content: center;
+  margin-left: 10%;
 }
 
 /* Responsive adjustments */
@@ -324,6 +346,17 @@ path {
     object-fit: cover; /* Makes the image cover the area without distortion */
   }
   .bgImage {
+    display: none;
+  }
+  .goodbyeimgmobile {
+    display: grid;
+    grid-column: 1/-1;
+    width: 100%;
+    object-fit: contain;
+    box-shadow: 10px 10px rgb(5, 48, 108);
+    border-radius: 15px;
+  }
+  .goodbyeimg {
     display: none;
   }
 }

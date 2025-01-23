@@ -8,7 +8,10 @@ function HomePage() {
     <div>
       <div id="topofpage"></div>
       <NavigationMenu />
-      <Parallax pages={6} style={{ top: "0", left: "0" }}>
+      <Parallax
+        pages={window.innerWidth < 768 ? 6 : 6.5}
+        style={{ top: "0", left: "0" }}
+      >
         <ParallaxLayer className="gridLayerFirst" offset={0} speed={0.05}>
           <img
             src={`${process.env.PUBLIC_URL}/images/WDBackground.jpg`}
@@ -45,7 +48,7 @@ function HomePage() {
 
         <ParallaxLayer
           className="gridLayer"
-          offset={window.innerWidth < 768 ? 1.2 : 1.5}
+          offset={window.innerWidth < 768 ? 1 : 1.5}
           speed={0.35}
         >
           <img
@@ -66,8 +69,8 @@ function HomePage() {
 
         <ParallaxLayer
           className="gridLayer"
-          offset={window.innerWidth < 768 ? 2.1 : 2}
-          speed={0.75}
+          offset={window.innerWidth < 768 ? 1.9999 : 2}
+          speed={0.9}
         >
           <img
             src={`${process.env.PUBLIC_URL}/images/NOR2242-HDR.jpg`}
@@ -75,7 +78,7 @@ function HomePage() {
             className="stgimg2"
           ></img>
           <div className="stgtext2">
-            <h2>Saint Louis Missouri</h2>
+            <h2>Saint Louis, Missouri</h2>
             <p>
               We are beyond excited to celebrate this wedding with everyone at
               Saint Xavier College Church and the Grand Hall at Union Station.
@@ -83,7 +86,11 @@ function HomePage() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer className="gridLayerRows" offset={3.2} speed={0.5}>
+        <ParallaxLayer
+          className="gridLayerRows"
+          offset={window.innerWidth < 768 ? 2.6 : 3}
+          speed={0.5}
+        >
           <div className="QContainer2">
             <h1>The Ceremony</h1>
             <a
@@ -180,6 +187,23 @@ function HomePage() {
             <h2>TBD</h2>
             <p>June 13th 8:30 CST</p>
           </div>
+        </ParallaxLayer>
+        <ParallaxLayer
+          className="gridLayerRows"
+          offset={window.innerWidth < 768 ? 4.9 : 5.3}
+          speed={0.6}
+        >
+          <h1 className="goodbyetxt">We love you all, and cannot wait!</h1>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/NOR2101-HDR(1).jpg`}
+            alt=""
+            className="goodbyeimg"
+          ></img>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/NOR2101-HDR(1)mobile.jpg`}
+            alt=""
+            className="goodbyeimgmobile"
+          ></img>
         </ParallaxLayer>
       </Parallax>
     </div>

@@ -60,6 +60,9 @@ const NavigationMenu = () => {
               Registry
             </a>
           </li>
+          <li>
+            <a href="/#/trivia">Trivia</a>
+          </li>
         </ul>
       ) : (
         <div className="menu-icon">☰</div>

@@ -1,0 +1,99 @@
+.quiz {
+  font-family: "Arial", sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.results {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4caf50;
+  padding: 20px;
+}
+
+.question-section {
+  margin-bottom: 20px;
+}
+
+.question-count {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.question-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.answer-options button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.answer-options button:hover {
+  background-color: #0056b3;
+}
+
+.answer-options button:active {
+  background-color: #003d82;
+}
+
+.answer-options button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Correct answer animation */
+.answer-options button.correct {
+  background-color: #4caf50 !important; /* Green */
+  animation: flash-correct 1s ease-in-out;
+}
+
+/* Incorrect answer animation */
+.answer-options button.incorrect {
+  background-color: #f44336 !important; /* Red */
+  animation: flash-incorrect 1s ease-in-out;
+}
+
+/* Correct animation keyframes */
+@keyframes flash-correct {
+  0%,
+  100% {
+    background-color: #4caf50;
+    transform: scale(1);
+  }
+  50% {
+    background-color: #81c784;
+    transform: scale(1.1);
+  }
+}
+
+/* Incorrect animation keyframes */
+@keyframes flash-incorrect {
+  0%,
+  100% {
+    background-color: #f44336;
+    transform: scale(1);
+  }
+  50% {
+    background-color: #e57373;
+    transform: scale(1.1);
+  }
+}
