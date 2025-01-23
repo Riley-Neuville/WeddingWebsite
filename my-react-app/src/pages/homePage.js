@@ -200,7 +200,7 @@ function HomePage() {
             className="goodbyeimg"
           ></img>
           <img
-            src={`${process.env.PUBLIC_URL}/images/NOR2101-HDR(1)mobile.jpg`}
+            src={`${process.env.PUBLIC_URL}/images/NOR2101-HDR(1)mobile.JPG`}
             alt=""
             className="goodbyeimgmobile"
           ></img>
