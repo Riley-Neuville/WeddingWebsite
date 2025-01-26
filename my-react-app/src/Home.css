@@ -95,18 +95,28 @@ text {
   color: white;
 }
 
-.gridLayer {
+.gridLayer,
+.gridLayer2,
+.gridLayer3,
+.gridLayer4 {
   display: grid;
+  position: relative;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 10px; /* Optional spacing between grid items */
 }
 
 .gridLayerFirst {
   display: grid;
+  position: relative;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px 1fr 200px 10px 100px;
   gap: 10px;
   text-align: center;
+}
+.gridLayerall {
+  display: grid;
+  grid-template-rows: 100vh 100vh 100vh 100vh 100vh;
+  gap: 10px; /* Optional spacing between grid items */
 }
 
 .gridLayerRows {
@@ -124,6 +134,10 @@ text {
   z-index: 100;
   font-size: 35px;
   fill: rgb(4, 4, 71);
+}
+
+.textoverlaymobile {
+  display: none;
 }
 
 .bgImage {
@@ -155,7 +169,6 @@ text {
   justify-items: center;
   align-content: center;
   text-align: center;
-  margin-left: 10%;
 }
 
 .stgimg2 {
@@ -174,7 +187,6 @@ text {
   align-content: center;
   text-align: center;
   grid-row: 1;
-  margin-left: 10%;
 }
 
 .test {
@@ -270,8 +282,15 @@ path {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .gridLayer {
+  .gridLayer,
+  .gridLayer2,
+  .gridLayer3,
+  .gridLayer4 {
     grid-template-columns: 1fr 1fr 1fr; /* Reduce to 3 columns */
+  }
+
+  .gridLayer3 {
+    margin-top: 25px;
   }
 
   .gridLayerFirst {
@@ -302,7 +321,10 @@ path {
 }
 
 @media (max-width: 480px) {
-  .gridLayer {
+  .gridLayer,
+  .gridLayer2,
+  .gridLayer3,
+  .gridLayer4 {
     grid-template-columns: 1fr; /* Single column layout */
   }
 
@@ -357,6 +379,20 @@ path {
     border-radius: 15px;
   }
   .goodbyeimg {
+    display: none;
+  }
+
+  .textoverlaymobile {
+    display: grid;
+    position: absolute;
+    top: 10%;
+    left: 32%;
+    z-index: 100;
+    font-size: 40px;
+    fill: rgb(4, 4, 71);
+  }
+
+  .textoverlay {
     display: none;
   }
 }

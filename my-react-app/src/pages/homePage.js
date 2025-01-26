@@ -1,18 +1,31 @@
 import "../Home.css";
 import React from "react";
 import NavigationMenu from "../components/NavigationMenu.js";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { Parallax, div } from "@react-spring/parallax";
 
 function HomePage() {
   return (
     <div>
       <div id="topofpage"></div>
       <NavigationMenu />
-      <Parallax
-        pages={window.innerWidth < 768 ? 6 : 6.5}
-        style={{ top: "0", left: "0" }}
-      >
-        <ParallaxLayer className="gridLayerFirst" offset={0} speed={0.05}>
+      <div className="gridLayerAll">
+        <div className="gridLayerFirst">
+          <svg viewBox="0 0 500 500" className="textoverlay">
+            <path id="curve" d="M 0 70 Q 130 50 260 73" />
+            <text width="500">
+              <textPath href="#curve" style={{ letterSpacing: "4px" }}>
+                Riley & Alexis
+              </textPath>
+            </text>
+          </svg>
+          <svg viewBox="0 0 500 500" className="textoverlaymobile">
+            <path id="curve2" d="M 0 70 Q 150 40 300 70" />
+            <text width="750">
+              <textPath href="#curve2" style={{ letterSpacing: "4px" }}>
+                Riley & Alexis
+              </textPath>
+            </text>
+          </svg>
           <img
             src={`${process.env.PUBLIC_URL}/images/WDBackground.jpg`}
             alt=""
@@ -31,26 +44,9 @@ function HomePage() {
           >
             <span className="rsvptext">RSVP Here!</span>
           </a>
-        </ParallaxLayer>
+        </div>
 
-        <ParallaxLayer className="gridLayer" offset={0} speed={0.5}>
-          <div className="imgholder1">
-            <svg viewBox="0 0 500 500" className="textoverlay">
-              <path id="curve" d="M 0 70 Q 130 50 260 73" />
-              <text width="500">
-                <textPath href="#curve" style={{ letterSpacing: "4px" }}>
-                  Riley & Alexis
-                </textPath>
-              </text>
-            </svg>
-          </div>
-        </ParallaxLayer>
-
-        <ParallaxLayer
-          className="gridLayer"
-          offset={window.innerWidth < 768 ? 1 : 1.5}
-          speed={0.35}
-        >
+        <div className="gridLayer3">
           <img
             src={`${process.env.PUBLIC_URL}/images/46400.jpeg`}
             alt=""
@@ -65,13 +61,9 @@ function HomePage() {
               say yes!
             </p>
           </div>
-        </ParallaxLayer>
+        </div>
 
-        <ParallaxLayer
-          className="gridLayer"
-          offset={window.innerWidth < 768 ? 1.9999 : 2}
-          speed={0.9}
-        >
+        <div className="gridLayer4">
           <img
             src={`${process.env.PUBLIC_URL}/images/NOR2242-HDR.jpg`}
             alt=""
@@ -84,13 +76,9 @@ function HomePage() {
               Saint Xavier College Church and the Grand Hall at Union Station.
             </p>
           </div>
-        </ParallaxLayer>
+        </div>
 
-        <ParallaxLayer
-          className="gridLayerRows"
-          offset={window.innerWidth < 768 ? 2.6 : 3}
-          speed={0.5}
-        >
+        <div className="gridLayerRows">
           <div className="QContainer2">
             <h1>The Ceremony</h1>
             <a
@@ -187,12 +175,8 @@ function HomePage() {
             <h2>TBD</h2>
             <p>June 13th 8:30 CST</p>
           </div>
-        </ParallaxLayer>
-        <ParallaxLayer
-          className="gridLayerRows"
-          offset={window.innerWidth < 768 ? 4.9 : 5.3}
-          speed={0.6}
-        >
+        </div>
+        <div className="gridLayerRows2">
           <h1 className="goodbyetxt">We love you all, and cannot wait!</h1>
           <img
             src={`${process.env.PUBLIC_URL}/images/NOR2101-HDR(1).jpg`}
@@ -204,8 +188,8 @@ function HomePage() {
             alt=""
             className="goodbyeimgmobile"
           ></img>
-        </ParallaxLayer>
-      </Parallax>
+        </div>
+      </div>
     </div>
   );
 }

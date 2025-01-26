@@ -13,7 +13,7 @@ function PartyPage() {
           <Member
             name="Matt Gall"
             description="Best Man"
-            imageSrc={`${process.env.PUBLIC_URL}/images/NOR2242-HDR.jpg`}
+            imageSrc={`${process.env.PUBLIC_URL}/images/Matt.jpeg`}
           />
           <Member
             name="Kyle Neuville"
@@ -33,17 +33,17 @@ function PartyPage() {
           <Member
             name="Joe Craven"
             description="Groomsmen"
-            imageSrc={`${process.env.PUBLIC_URL}/images/NOR2242-HDR.jpg`}
+            imageSrc={`${process.env.PUBLIC_URL}/images/Joe.jpeg`}
           />
           <Member
             name="Greg Farnsworth"
             description="Groomsmen"
-            imageSrc={`${process.env.PUBLIC_URL}/images/NOR2242-HDR.jpg`}
+            imageSrc={`${process.env.PUBLIC_URL}/images/Greg.jpeg`}
           />
           <Member
             name="Bryan Hoyt"
             description="Groomsmen"
-            imageSrc={`${process.env.PUBLIC_URL}/images/NOR2242-HDR.jpg`}
+            imageSrc={`${process.env.PUBLIC_URL}/images/Bryan.jpeg`}
           />
         </div>
         <div className="partyW">
