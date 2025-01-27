@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import "../NavigationMenu.css";
+import "../css/NavigationMenu.css";
 
 const NavigationMenu = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -47,6 +47,9 @@ const NavigationMenu = () => {
           </li>
           <li>
             <a href="/#/faq">FAQs</a>
+          </li>
+          <li>
+            <a href="/#/ttd">Things to do</a>
           </li>
           <li>
             <a href="/#/party">Wedding Party</a>

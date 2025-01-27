@@ -1,4 +1,4 @@
-import "../Home.css";
+import "../css/Home.css";
 import React from "react";
 import NavigationMenu from "../components/NavigationMenu.js";
 import { Parallax, div } from "@react-spring/parallax";
@@ -55,10 +55,14 @@ function HomePage() {
           <div className="stgtext1">
             <h2>Stockholm, Sweden</h2>
             <p>
-              After almost ruining the surprise for multiple days Riley asked
-              Alexis to marry him. Despite taking on a british accent and
-              insisting she was "gobsmacked" multiple times, she did eventually
-              say yes!
+              Riley spent months planning the perfect proposal. When he heard we
+              were going to Sweden for their friends' wedding, he knew it had to
+              be on that trip. We both love traveling and it was the perfect
+              time to propose as we will share many more adventures together. We
+              set off on our Scandinavian adventure, feeling nervous and almost
+              ruining the surprise multiple times Riley asked me to marry him on
+              March 12, 2024. Despite taking on a british accent and insisting I
+              was "gobsmacked" multiple times, I did eventually say yes!
             </p>
           </div>
         </div>
@@ -72,8 +76,39 @@ function HomePage() {
           <div className="stgtext2">
             <h2>Saint Louis, Missouri</h2>
             <p>
-              We are beyond excited to celebrate this wedding with everyone at
-              Saint Xavier College Church and the Grand Hall at Union Station.
+              Riley and I met briefly in the dorm halls of Saint Louis
+              University our freshman year as we were both consoling a sad peer.
+              Multiple years later, we reunited at a party our good friend Greg
+              was throwing! Riley offered to walk my friends and me back to our
+              apartment as a gentleman does. On the way, I pointed out pepper
+              plants on campus and stated my curiosity of how they taste. Riley
+              immediately went out and grabbed two peppers for us to try. That
+              moment really made me intrigued and impressed by how fun and
+              fearless he is. We were friends for our whole junior year
+              (although they had crushes on each other) until Riley asked me out
+              in May 2017. 8 years later and here we are!
+            </p>
+          </div>
+        </div>
+
+        <div className="gridLayer5">
+          <img
+            src={`${process.env.PUBLIC_URL}/images/NOR2594.jpg`}
+            alt=""
+            className="stgimg3"
+          ></img>
+          <div className="stgtext3">
+            <h2>Ceremony followed by dinner and dancing!</h2>
+            <p>
+              The ceremony will take place where they met, Saint Louis
+              University in their church Saint Francis Xavier at 3:00 pm on June
+              14, 2025. Please arrive 30 minutes early. You are welcome to valet
+              your car for free at Union Station Hotel and ride our shuttle to
+              the ceremony starting at 2:00 pm then retrieve your car after the
+              reception. Dinner and dancing to follow at Union Station Hotel!
+              The cocktail hour starts at 6:00 PM with the reception to start at
+              7:00 PM. Bring your dancing shoes as you know we will be dancing
+              all night!
             </p>
           </div>
         </div>
@@ -98,7 +133,13 @@ function HomePage() {
 
             <p>June 14th 3PM CST</p>
           </div>
-
+          <div className="QContainer7">
+            <img
+              src={`${process.env.PUBLIC_URL}/images/martini.png`}
+              alt=""
+              className="qImg2"
+            ></img>
+          </div>
           <div className="QContainer3">
             <h1>The Reception</h1>
             <a
@@ -117,7 +158,13 @@ function HomePage() {
             </a>
             <p>June 14th 5PM CST</p>
           </div>
-
+          <div className="QContainer6">
+            <img
+              src={`${process.env.PUBLIC_URL}/images/church.png`}
+              alt=""
+              className="qImg1"
+            ></img>
+          </div>
           <div className="QContainer4">
             <h1>Farewell Brunch</h1>
             <a
@@ -174,6 +221,13 @@ function HomePage() {
             <h1>Welcome Drinks</h1>
             <h2>TBD</h2>
             <p>June 13th 8:30 CST</p>
+          </div>
+          <div className="QContainer8">
+            <img
+              src={`${process.env.PUBLIC_URL}/images/SVG_CHANGEABLE_COLOR.svg`}
+              alt=""
+              className="qImg3"
+            ></img>
           </div>
         </div>
         <div className="gridLayerRows2">

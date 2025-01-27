@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Gallery from "../components/Gallery.js";
 import NavigationMenu from "../components/NavigationMenu.js";
-import "../Gallery.css";
+import "../css/Gallery.css";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function GalleryPage() {

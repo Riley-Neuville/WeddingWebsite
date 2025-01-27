@@ -12,6 +12,7 @@ import PartyPage from "./pages/partyPage";
 import FaqPage from "./pages/faqPage";
 import QuizPage from "./pages/quizPage";
 import ScrollToTop from "./components/ScrollToTop";
+import TtdPage from "./pages/ttdPage";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/faq" element={<FaqPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/trivia" element={<QuizPage />} />
+        <Route path="/ttd" element={<TtdPage />} />
         {/* Redirect unknown paths to the home page */}
         <Route path="*" element={<Navigate to="/#/" />} />
       </Routes>

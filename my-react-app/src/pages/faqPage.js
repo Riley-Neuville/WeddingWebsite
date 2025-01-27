@@ -1,7 +1,7 @@
-import "../Home.css";
+import "../css/Home.css";
 import React, { useRef } from "react";
 import NavigationMenu from "../components/NavigationMenu";
-import "../Faq.css";
+import "../css/Faq.css";
 
 function FaqPage() {
   return (

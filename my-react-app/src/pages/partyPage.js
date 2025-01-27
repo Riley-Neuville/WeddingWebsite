@@ -1,8 +1,8 @@
-import "../Home.css";
+import "../css/Home.css";
 import React from "react";
 import NavigationMenu from "../components/NavigationMenu.js";
 import Member from "../components/Member.js";
-import "../Member.css";
+import "../css/Member.css";
 
 function PartyPage() {
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Member.css";
+import "../css/Member.css";
 
 function Member(props) {
   const [isModalOpen, setIsModalOpen] = useState(false);

@@ -1,8 +1,8 @@
-import "../Home.css";
+import "../css/Home.css";
 import React from "react";
 import NavigationMenu from "../components/NavigationMenu.js";
 import QuizComponent from "../components/Quiz.js";
-import "../Member.css";
+import "../css/Member.css";
 
 function QuizPage() {
   return (
