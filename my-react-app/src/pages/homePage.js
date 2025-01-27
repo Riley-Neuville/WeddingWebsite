@@ -56,7 +56,7 @@ function HomePage() {
             <h2>Stockholm, Sweden</h2>
             <p>
               Riley spent months planning the perfect proposal. When he heard we
-              were going to Sweden for their friends' wedding, he knew it had to
+              were going to Sweden for our friends' wedding, he knew it had to
               be on that trip. We both love traveling and it was the perfect
               time to propose as we will share many more adventures together. We
               set off on our Scandinavian adventure, feeling nervous and almost
@@ -100,11 +100,11 @@ function HomePage() {
           <div className="stgtext3">
             <h2>Ceremony followed by dinner and dancing!</h2>
             <p>
-              The ceremony will take place where they met, Saint Louis
-              University in their church Saint Francis Xavier at 3:00 pm on June
-              14, 2025. Please arrive 30 minutes early. You are welcome to valet
-              your car for free at Union Station Hotel and ride our shuttle to
-              the ceremony starting at 2:00 pm then retrieve your car after the
+              The ceremony will take place where we met, Saint Louis University
+              in their church Saint Francis Xavier at 3:00 pm on June 14, 2025.
+              Please arrive 30 minutes early. You are welcome to valet your car
+              for free at Union Station Hotel and ride our shuttle to the
+              ceremony starting at 2:00 pm then retrieve your car after the
               reception. Dinner and dancing to follow at Union Station Hotel!
               The cocktail hour starts at 6:00 PM with the reception to start at
               7:00 PM. Bring your dancing shoes as you know we will be dancing
