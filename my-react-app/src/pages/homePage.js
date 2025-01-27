@@ -21,7 +21,7 @@ function HomePage() {
           <svg viewBox="0 0 500 500" className="textoverlaymobile">
             <path id="curve2" d="M 0 70 Q 150 40 300 70" />
             <text width="750">
-              <textPath href="#curve2" style={{ letterSpacing: "4px" }}>
+              <textPath href="#curve2" style={{ letterSpacing: "3px" }}>
                 Riley & Alexis
               </textPath>
             </text>
