@@ -22,7 +22,7 @@ const MapComponent = () => {
   ];
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyCoIqpP20UII6ERW6GKCkUK8rhAGVUIi_g">
+    <LoadScript googleMapsApiKey="">
       <GoogleMap mapContainerStyle={mapStyles} zoom={14} center={defaultCenter}>
         {locations.map((item, index) => (
           <Marker key={index} position={item.location} title={item.name} />
