@@ -36,22 +36,6 @@ function FaqPage() {
             Parking Garage, Laclede Ave, St. Louis, MO 63108
           </p>
         </div>
-        <div className="ttds">
-          <h1>Activities in or near the hotel</h1>
-          <p>
-            Aquarium<br></br>
-            Schlafly brewery tour<br></br>
-            Arch<br></br>
-            Union station ferris wheel<br></br>
-            mini golf<br></br> TopGolf
-          </p>
-          <h1>Restaurants in or near the hotel</h1>
-          <p>
-            Union station hotel restaurant<br></br>Train Shed<br></br>Soda
-            Fountain<br></br>1894 Cafe<br></br>Landry's Seafood<br></br>McGurk's
-            Irish Pub<br></br>The Pitch<br></br>Schafly Brewery
-          </p>
-        </div>
       </div>
     </div>
   );
