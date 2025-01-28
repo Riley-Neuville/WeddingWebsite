@@ -8,10 +8,11 @@
 }
 
 h1 {
+  text-decoration: none;
   font-size: clamp(32px, 5vw, 52px);
 }
 h2 {
-  font-size: clamp(20px, 4vw, 36px);
+  font-size: clamp(20px, 4vw, 32px);
 }
 p {
   font-size: clamp(16px, 2vw, 28px);
@@ -19,21 +20,9 @@ p {
 
 .link {
   position: relative;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
-.link::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0px; /* Adjust closer to the text */
-  height: 2px;
-  width: 0;
-  background-color: rgb(4, 4, 71);
-  transform: translateX(-50%);
-  transition: width 0.3s ease-in-out;
-}
-
-.link:hover::after {
-  width: 75%; /* Expanding underline effect from the middle */
+.link:hover {
+  color: navy;
 }

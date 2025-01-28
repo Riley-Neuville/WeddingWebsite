@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "gh-pages": "^6.2.0",
-    "react-router-dom": "^6.28.1"
+    "react-router-dom": "^6.28.2"
   },
   "homepage": "https://www.neuvillewedding2025.com"
 }

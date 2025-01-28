@@ -1,5 +1,4 @@
 .content {
   margin-right: 0px; /* Adjust this value to control the overlap */
-  height: 100vh;
   overflow-y: scroll;
 }
