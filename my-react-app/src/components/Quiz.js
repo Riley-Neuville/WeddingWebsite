@@ -107,9 +107,27 @@ function QuizComponent() {
     // Add more questions here
   ];
 
+  // Utility function to push the event to GTM
+  const pushToGTM = (questionText, answerText, isCorrect) => {
+    if (window.dataLayer) {
+      window.dataLayer.push({
+        event: "quiz_answer_click",
+        question: questionText,
+        answer: answerText,
+        correct: isCorrect,
+      });
+    }
+  };
+
   const handleAnswerOptionClick = (isCorrect, index) => {
+    const answerOption = questions[currentQuestion].answerOptions[index];
     setClickedAnswer({ index, isCorrect }); // Track the clicked button and correctness
 
+    pushToGTM(
+      questions[currentQuestion].questionText,
+      answerOption.answerText,
+      isCorrect
+    );
     if (isCorrect) {
       setScore(score + 1);
     }
