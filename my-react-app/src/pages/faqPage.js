@@ -1,5 +1,5 @@
 import "../css/Home.css";
-import React, { useRef } from "react";
+import React from "react";
 import NavigationMenu from "../components/NavigationMenu";
 import "../css/Faq.css";
 
