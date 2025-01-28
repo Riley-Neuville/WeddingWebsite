@@ -30,12 +30,14 @@
   align-items: center;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
+
 @media (min-width: 600px) {
   .nav-bubble.expanded {
     width: 17.5%;
     background: linear-gradient(to right, black, 7%, rgb(4, 4, 71));
   }
 }
+
 .menu-icon {
   font-size: 24px;
   color: white;
@@ -50,6 +52,8 @@
   flex-direction: column;
   align-items: center;
   gap: 30px; /* Increased vertical spacing */
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: calc(100% - 40px); /* Prevent list items from overflowing */
 }
 
 .menu-list li {
@@ -78,4 +82,11 @@
 
 .menu-list li a:hover::after {
   width: 100%; /* Expanding underline effect */
+}
+
+@media (max-height: 600px) {
+  .nav-bubble.expanded .menu-list {
+    max-height: 80%; /* Ensure the list is scrollable in smaller viewports */
+    overflow-y: auto; /* Enable scrolling if the list overflows */
+  }
 }

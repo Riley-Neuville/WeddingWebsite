@@ -8,7 +8,6 @@ html {
 body {
   overscroll-behavior: none;
   margin: 0;
-  height: 100%;
   background-color: #eff8ff;
 }
 
@@ -75,7 +74,6 @@ text {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .loading-spinner img {

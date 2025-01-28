@@ -1,5 +1,4 @@
 html {
-  overflow-y: auto;
   margin: 0;
   background-color: #eff8ff;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -49,7 +48,6 @@ h1 {
 body {
   overflow-y: auto;
   margin: 0;
-  height: 100%;
   background-color: #eff8ff;
   display: grid;
 }
@@ -115,7 +113,7 @@ text {
 }
 .gridLayerall {
   display: grid;
-  grid-template-rows: 100vh 100vh 100vh 100vh 100vh;
+  grid-template-rows: auto;
   gap: 10px; /* Optional spacing between grid items */
 }
 
