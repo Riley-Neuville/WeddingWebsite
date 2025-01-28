@@ -4,6 +4,7 @@ import {
   Routes,
   Route,
   Navigate,
+  ScrollRestoration,
 } from "react-router-dom";
 import HomePage from "./pages/homePage";
 import GalleryPage from "./pages/galleryPage";

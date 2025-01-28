@@ -1,7 +1,6 @@
 import "../css/Home.css";
 import React from "react";
 import NavigationMenu from "../components/NavigationMenu.js";
-import { Parallax, div } from "@react-spring/parallax";
 
 function HomePage() {
   return (
@@ -13,7 +12,7 @@ function HomePage() {
           <svg viewBox="-130 0 500 500" className="textoverlay">
             <path id="curve" d="M -130 70 Q 0 40 130 75" />
             <text width="500">
-              <textPath href="#curve" style={{ letterSpacing: "4px" }}>
+              <textPath className="ltText" href="#curve">
                 Riley & Alexis
               </textPath>
             </text>

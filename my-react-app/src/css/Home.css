@@ -136,6 +136,9 @@ text {
   font-size: 35px;
   fill: rgb(4, 4, 71);
 }
+.ltText {
+  letter-spacing: 4px;
+}
 
 .textoverlaymobile {
   display: none;
@@ -367,6 +370,12 @@ path {
   .QContainer7,
   .QContainer8 {
     display: none;
+  }
+  .ltText {
+    letter-spacing: 3px;
+  }
+  .textoverlay {
+    top: 5%;
   }
 }
 
