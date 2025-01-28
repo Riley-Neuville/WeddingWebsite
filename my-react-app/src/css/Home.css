@@ -1,4 +1,5 @@
 html {
+  overflow-y: auto;
   margin: 0;
   background-color: #eff8ff;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -74,10 +75,12 @@ text {
   display: grid;
   grid-column: 3/5;
   grid-row: 4;
+  z-index: 1000;
 }
 
 .rsvp-button span {
   display: inline-block; /* Ensures proper alignment */
+  z-index: 1000;
 }
 
 .rsvp-button:hover {
@@ -362,6 +365,7 @@ path {
   }
   .rsvp-button {
     grid-column: 2;
+    z-index: 1000;
   }
 
   .QContainer6,
