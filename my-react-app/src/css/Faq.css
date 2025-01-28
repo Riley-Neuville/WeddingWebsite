@@ -1,23 +1,5 @@
-.grid {
-  margin-top: 70px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
 .faqs {
-  display: grid;
-  grid-row: 1;
-  grid-column: 1;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-
-.ttds {
-  display: grid;
-  grid-row: 2;
-  grid-column: 1;
+  margin-top: 70px;
   justify-content: center;
   text-align: center;
   align-items: center;

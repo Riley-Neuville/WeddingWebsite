@@ -126,6 +126,7 @@ text {
     auto-fit,
     minmax(235px, 1fr)
   ); /* Auto-resizes columns */
+  grid-auto-rows: 1fr;
 }
 
 .textoverlay {
@@ -235,8 +236,7 @@ path {
   border-color: rgb(5, 48, 108);
   align-items: center;
   width: 1fr;
-  height: 450px;
-  margin-left: 35px;
+  margin: 5px;
 }
 
 /* Individual column placement */
@@ -404,14 +404,6 @@ path {
   .rsvp-button {
     grid-column: 1;
   }
-  .textoverlay {
-    position: absolute;
-    top: 10%;
-    left: 32%;
-    z-index: 100;
-    font-size: 35px;
-    fill: rgb(4, 4, 71);
-  }
   .bgImageMobile {
     display: grid;
     grid-column-start: 1;
@@ -439,13 +431,15 @@ path {
   .textoverlaymobile {
     display: grid;
     position: absolute;
-    top: 10%;
-    left: 32%;
+    top: 8%;
+    left: 21%;
     z-index: 100;
-    font-size: 40px;
+    font-size: 35px;
     fill: rgb(4, 4, 71);
   }
-
+  .nametextmobile {
+    font-size: clamp(32px, 5vw, 52px);
+  }
   .textoverlay {
     display: none;
   }

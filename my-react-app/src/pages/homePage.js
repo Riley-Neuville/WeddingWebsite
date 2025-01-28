@@ -10,24 +10,24 @@ function HomePage() {
       <NavigationMenu />
       <div className="gridLayerAll">
         <div className="gridLayerFirst">
-          <svg viewBox="0 0 500 500" className="textoverlay">
-            <path id="curve" d="M 0 70 Q 130 50 260 73" />
+          <svg viewBox="-130 0 500 500" className="textoverlay">
+            <path id="curve" d="M -130 70 Q 0 40 130 75" />
             <text width="500">
               <textPath href="#curve" style={{ letterSpacing: "4px" }}>
                 Riley & Alexis
               </textPath>
             </text>
           </svg>
-          <svg viewBox="0 0 500 500" className="textoverlaymobile">
-            <path id="curve2" d="M 0 70 Q 150 40 300 70" />
-            <text width="750">
+          <svg viewBox="0 0 300 300" className="textoverlaymobile">
+            <path id="curve2" d="M 0 70 Q 150 40 300 95" />
+            <text className="nametextmobile" width="750">
               <textPath href="#curve2" style={{ letterSpacing: "3px" }}>
                 Riley & Alexis
               </textPath>
             </text>
           </svg>
           <img
-            src={`${process.env.PUBLIC_URL}/images/WDBackground.jpg`}
+            src={`${process.env.PUBLIC_URL}/images/WDBackground1.jpg`}
             alt=""
             className="bgImage"
           ></img>
@@ -85,7 +85,7 @@ function HomePage() {
               immediately went out and grabbed two peppers for us to try. That
               moment really made me intrigued and impressed by how fun and
               fearless he is. We were friends for our whole junior year
-              (although they had crushes on each other) until Riley asked me out
+              (although we had crushes on each other) until Riley asked me out
               in May 2017. 8 years later and here we are!
             </p>
           </div>
@@ -156,7 +156,7 @@ function HomePage() {
             >
               <p>1820 Market St, St. Louis, MO 63103</p>
             </a>
-            <p>June 14th 5PM CST</p>
+            <p>June 14th 6PM CST</p>
           </div>
           <div className="QContainer6">
             <img
@@ -166,13 +166,13 @@ function HomePage() {
             ></img>
           </div>
           <div className="QContainer4">
-            <h1>Farewell Brunch</h1>
+            <h1>Farewell Picnic</h1>
             <a
               className="qlink"
               href="https://www.google.com/maps/place/29+Washington+Terrace,+St.+Louis,+MO+63112/@38.6524126,-90.2813946,17z/data=!3m1!4b1!4m6!3m5!1s0x87d8b5352c40ae7b:0x9ef069aaf5b24c2d!8m2!3d38.6524084!4d-90.2788197!16s%2Fg%2F11sv047l37?entry=ttu&g_ep=EgoyMDI1MDEwMi4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
             >
-              <h2>Mr. and Mrs.Short's Home</h2>
+              <h2>Mr. and Mrs. Short's Home</h2>
             </a>
             <a
               className="qlink"
@@ -181,7 +181,7 @@ function HomePage() {
             >
               <p>29 Washington Terrace, St. Louis, MO 63103</p>
             </a>
-            <p>June 15th 11AM CST</p>
+            <p>June 15th 11:30AM CST</p>
           </div>
 
           <div className="QContainer5">
