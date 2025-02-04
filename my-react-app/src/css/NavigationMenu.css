@@ -29,12 +29,14 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 
 @media (min-width: 600px) {
   .nav-bubble.expanded {
     width: 17.5%;
     background: linear-gradient(to right, black, 7%, rgb(4, 4, 71));
+    z-index: 1000;
   }
 }
 
@@ -88,5 +90,6 @@
   .nav-bubble.expanded .menu-list {
     max-height: 80%; /* Ensure the list is scrollable in smaller viewports */
     overflow-y: auto; /* Enable scrolling if the list overflows */
+    z-index: 1000;
   }
 }

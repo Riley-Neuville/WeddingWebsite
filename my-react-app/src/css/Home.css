@@ -75,12 +75,12 @@ text {
   display: grid;
   grid-column: 3/5;
   grid-row: 4;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .rsvp-button span {
   display: inline-block; /* Ensures proper alignment */
-  z-index: 1000;
+  z-index: 100;
 }
 
 .rsvp-button:hover {
@@ -365,7 +365,7 @@ path {
   }
   .rsvp-button {
     grid-column: 2;
-    z-index: 1000;
+    z-index: 100;
   }
 
   .QContainer6,
