@@ -904,7 +904,7 @@ const Gallery = () => {
 
       {loading ? (
         <div className="loading-spinner">
-          <img src="/spinner.gif" alt="Loading..." />
+          <img src="/spinner.gif" alt="" />
         </div>
       ) : (
         <div className="gallery">
