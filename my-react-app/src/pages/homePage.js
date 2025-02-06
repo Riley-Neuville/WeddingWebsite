@@ -9,22 +9,16 @@ function HomePage() {
       <NavigationMenu />
       <div className="gridLayerAll">
         <div className="gridLayerFirst">
-          <svg viewBox="-130 0 500 500" className="textoverlay">
-            <path id="curve" d="M -130 70 Q 0 40 130 75" />
-            <text width="500">
-              <textPath className="ltText" href="#curve">
-                Riley & Alexis
-              </textPath>
-            </text>
-          </svg>
-          <svg viewBox="0 0 300 300" className="textoverlaymobile">
-            <path id="curve2" d="M 0 70 Q 150 40 300 95" />
-            <text className="nametextmobile" width="750">
-              <textPath href="#curve2" style={{ letterSpacing: "3px" }}>
-                Riley & Alexis
-              </textPath>
-            </text>
-          </svg>
+          <div className="namecontainer">
+            <svg viewBox="-10 0 280 130" className="textoverlay">
+              <path id="curve" d="M 0 70 Q 130 40 260 75" />
+              <text width="500">
+                <textPath className="ltText" href="#curve">
+                  Riley & Alexis
+                </textPath>
+              </text>
+            </svg>
+          </div>
           <img
             src={`${process.env.PUBLIC_URL}/images/WDBackground1.jpg`}
             alt=""
@@ -36,13 +30,15 @@ function HomePage() {
             className="bgImageMobile"
           ></img>
           <h1 className="datetext">Please Join Us June 14th 2025!</h1>
-          <a
-            href="https://withjoy.com/alexis-and-riley-jun-25/rsvp"
-            target="_blank"
-            className="rsvp-button"
-          >
-            <span className="rsvptext">RSVP Here!</span>
-          </a>
+          <div className="buttoncontainer">
+            <a
+              href="https://withjoy.com/alexis-and-riley-jun-25/rsvp"
+              target="_blank"
+              className="rsvp-button"
+            >
+              <span className="rsvptext">RSVP Here!</span>
+            </a>
+          </div>
         </div>
 
         <div className="gridLayer3">
@@ -218,8 +214,21 @@ function HomePage() {
 
           <div className="QContainer1">
             <h1>Welcome Drinks</h1>
-            <h2>TBD</h2>
-            <p>June 13th 8:30 CST</p>
+            <a
+              className="qlink"
+              href="https://maggieobriens.com/downtown/"
+              target="_blank"
+            >
+              <h2>Maggie O'Brien's</h2>
+            </a>
+            <a
+              className="qlink"
+              href="https://www.google.com/maps/place/Maggie+O'Brien's/@38.6296472,-90.2121305,17z/data=!3m1!4b1!4m6!3m5!1s0x87d8b36a30e00829:0x91d9b72fb05bbdf9!8m2!3d38.6296472!4d-90.2095556!16s%2Fm%2F0lv5q8h?entry=ttu&g_ep=EgoyMDI1MDIwMy4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+            >
+              <p>2000 Market St, St. Louis, MO 63103</p>
+            </a>
+            <p>June 13th 9:00PM CST</p>
           </div>
           <div className="QContainer8">
             <img
