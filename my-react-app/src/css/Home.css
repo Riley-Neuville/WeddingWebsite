@@ -1,5 +1,4 @@
 html {
-  overflow-y: auto;
   margin: 0;
   background-color: #eff8ff;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -328,7 +327,6 @@ path {
   grid-column: 1/-1;
   width: 100%;
   object-fit: contain;
-  box-shadow: 10px 10px rgb(5, 48, 108);
   border-radius: 15px;
 }
 .goodbyeimgmobile {
