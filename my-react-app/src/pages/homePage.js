@@ -29,14 +29,10 @@ function HomePage() {
             alt=""
             className="bgImageMobile"
           ></img>
-          <h1 className="datetext">Please Join Us June 14th 2025!</h1>
+          <h1 className="datetext">Thank you to everyone who joined us!</h1>
           <div className="buttoncontainer">
-            <a
-              href="https://withjoy.com/alexis-and-riley-jun-25/rsvp"
-              target="_blank"
-              className="rsvp-button"
-            >
-              <span className="rsvptext">RSVP Here!</span>
+            <a href="/#/gallery" className="rsvp-button">
+              <span className="rsvptext">Photo Gallery!</span>
             </a>
           </div>
         </div>
@@ -239,7 +235,9 @@ function HomePage() {
           </div>
         </div>
         <div className="gridLayerRows2">
-          <h1 className="goodbyetxt">We love you all, and cannot wait!</h1>
+          <h1 className="goodbyetxt">
+            We love you all, and had the perfect day!
+          </h1>
           <img
             src={`${process.env.PUBLIC_URL}/images/NOR2101-HDR(1).jpg`}
             alt=""
